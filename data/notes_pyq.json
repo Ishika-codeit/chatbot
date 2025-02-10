@@ -1,0 +1,10 @@
+{
+    "math": {
+      "notes": "Mathematics involves the study of numbers, equations, functions, and geometric shapes.",
+      "pyq": ["Q1: Solve x^2 - 5x + 6 = 0", "Q2: Find the derivative of sin(x)."]
+    },
+    "physics": {
+      "notes": "Physics is the study of matter, motion, energy, and force.",
+      "pyq": ["Q1: State Newton's second law.", "Q2: Derive the equation of motion."]
+    }
+  }

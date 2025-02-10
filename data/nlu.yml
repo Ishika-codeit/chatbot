@@ -1,0 +1,188 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: ask_math
+  examples: |
+    - What is [5 + 5]?
+    - Calculate [10 * 2](math_expression)
+    - Solve [100 - 50]?
+    - How much is [7 / 2]?
+    - Can you compute [8 + 3]?
+
+- intent: ask_science_question
+  examples: |
+    - Explain Newton third law.
+    - What is gravity?
+    - How does photosynthesis work?
+
+- intent: ask_coding_question
+  examples: |
+    - What is a Python function?
+    - How do I write a loop in Java?
+    - What is recursion?
+    
+- intent: ask_career_advice
+  examples: |
+    - I need career guidance
+    - What career should I choose?
+    - How do I know which job is right for me?
+
+- intent: ask_career_in_tech
+  examples: |
+    - How can I start a career in tech?
+    - What skills do I need to become a software developer?
+    - How do I become a data scientist?
+    - Is AI a good career choice?
+
+- intent: ask_career_in_medical
+  examples: |
+    - How do I become a doctor?
+    - What are the best careers in the medical field?
+    - How long does it take to become a surgeon?
+
+- intent: ask_career_in_business
+  examples: |
+    - What is a good career in business?
+    - Should I do an MBA?
+    - How do I become an entrepreneur?
+    - What careers are available in marketing?
+
+- intent: ask_career_trends
+  examples: |
+    - What are the best careers in 2025?
+    - Which industries are growing fast?
+    - What jobs will be in demand in the future?
+
+- intent: ask_skills_for_career
+  examples: |
+    - What skills do I need for a career in AI?
+    - What are the top skills for engineers?
+    - How can I improve my leadership skills?
+    - What technical skills should I learn?
+
+- intent: ask_remote_work
+  examples: |
+    - How do I find remote jobs?
+    - What are the best careers for remote work?
+    - Can I work from home as a software engineer?
+
+- intent: ask_career_recommendation
+  examples: |
+    - I am interested in AI, what should I do?
+    - What are good careers in business?
+
+- intent: ask_career_advice_gpt
+  examples: |
+    - Can you suggest a career for me?
+    - I love coding, what job should I pursue?
+    - What is the best job for data science?
+    
+- intent: ask_notes_pyq
+  examples: |
+    - Give me notes on physics
+    - Show me previous year questions for math
+    - Can you provide chemistry PYQs?
+    - I need notes for biology?
+
+- intent: start_quiz
+  examples: |
+    - Start a math quiz
+    - I want to take a science quiz
+    - Give me a quiz on physics
+
+- intent: submit_answer
+  examples: |
+    - A
+    - B
+    - C
+    - D
+    - My answer is C

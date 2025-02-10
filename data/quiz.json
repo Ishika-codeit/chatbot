@@ -1,0 +1,21 @@
+{
+    "math": [
+      {
+        "question": "What is 2 + 2?",
+        "options": ["1", "2", "4", "5"],
+        "answer": "4"
+      },
+      {
+        "question": "What is 5 * 3?",
+        "options": ["10", "15", "20", "25"],
+        "answer": "15"
+      }
+    ],
+    "science": [
+      {
+        "question": "What is the chemical symbol for water?",
+        "options": ["O2", "CO2", "H2O", "N2"],
+        "answer": "H2O"
+      }
+    ]
+  }

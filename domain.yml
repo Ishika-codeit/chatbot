@@ -1,0 +1,104 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - ask_career_recommendation
+  - ask_math_question
+  - ask_science_question
+  - ask_career_advice_gpt
+  - ask_notes_pyq
+  - start_quiz
+  - submit_answer
+  - ask_remote_work
+  - ask_career_advice
+  - ask_career_in_medical
+  - ask_coding_question
+  - ask_skills_for_career
+  - ask_career_in_tech
+  - ask_career_trends
+  - ask_career_in_business
+
+
+responses:
+  utter_greet:
+    - text: "Hey! How are you?"
+
+  utter_cheer_up:
+    - text: "Here is something to cheer you up:"
+      image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+    - text: "Did that help you?"
+
+  utter_happy:
+    - text: "Great, carry on!"
+
+  utter_goodbye:
+    - text: "Bye"
+
+  utter_iamabot:
+    - text: "I am a bot, powered by Rasa."
+
+  utter_ask_math_question:
+    - text: "The square root of 64 is 8."
+    - text: "To solve for x in 5x + 3 = 18, subtract 3 and divide by 5."
+
+  utter_ask_science_question:
+    - text: "Newton third law states that every action has an equal and opposite reaction."
+
+  utter_career_advice:
+    - text: "Sure! What field are you interested in?"
+
+  utter_career_in_business:
+    - text: "Business careers include finance, marketing, and management."
+
+  utter_career_in_medical:
+    - text: "Medical careers include doctors, nurses, and therapists."
+
+  utter_career_trends:
+    - text: "Here are some of the latest career trends: AI, data science, remote work, and more."
+
+  utter_career_in_tech:
+    - text: "Tech careers are growing in AI, cybersecurity, and software development."
+    
+  utter_coding_question:
+    - text: "Sure! What coding question do you have?"
+
+  utter_remote_work:
+    - text: "Remote work is becoming more popular, especially in IT, marketing, and customer service roles."
+
+  utter_skills_for_career:
+    - text: "It depends on the field! For tech, learn coding. For business, focus on communication and leadership."
+
+  utter_default:
+    - text: "Sorry, I didn't understand that."
+
+actions:
+  - action_career_recommendation
+  - action_fetch_notes_pyq
+  - action_career_advice_gpt
+  - action_start_quiz
+  - action_check_answer
+  - action_calculate_math
+
+slots:
+  current_question:
+    type: text
+    mappings:
+      - type: from_text
+    influence_conversation: false
+  correct_answer:
+    type: text
+    mappings:
+      - type: from_text
+    influence_conversation: false
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

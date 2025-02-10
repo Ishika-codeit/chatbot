@@ -1,0 +1,105 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: provide career advice
+  steps:
+  - intent: ask_career_recommendation
+  - action: action_career_recommendation
+
+- story: handle math queries
+  steps:
+  - intent: ask_math
+  - action: action_calculate_math
+
+- story: answer science question
+  steps:
+  - intent: ask_science_question
+  - action: utter_ask_science_question
+
+- story: AI-powered career advice
+  steps:
+  - intent: ask_career_advice_gpt
+  - action: action_career_advice_gpt
+
+- story: Fetch notes and PYQs
+  steps:
+  - intent: ask_notes_pyq
+  - action: action_fetch_notes_pyq
+  
+- story: Start a quiz
+  steps:
+  - intent: start_quiz
+  - action: action_start_quiz
+
+- story: Answer a quiz question
+  steps:
+  - intent: submit_answer
+  - action: action_check_answer
+
+- story: User asks for career advice
+  steps:
+  - intent: ask_career_advice
+  - action: utter_career_advice
+
+- story: User asks about career trends
+  steps:
+  - intent: ask_career_trends
+  - action: utter_career_trends
+
+- story: User asks about business careers
+  steps:
+  - intent: ask_career_in_business
+  - action: utter_career_in_business
+
+- story: User asks about medical careers
+  steps:
+  - intent: ask_career_in_medical
+  - action: utter_career_in_medical
+
+- story: User asks about tech careers
+  steps:
+  - intent: ask_career_in_tech
+  - action: utter_career_in_tech
+
+- story: User asks about coding questions
+  steps:
+  - intent: ask_coding_question
+  - action: utter_coding_question
+
+- story: User asks about remote work
+  steps:
+  - intent: ask_remote_work
+  - action: utter_remote_work
+
+- story: User asks about career skills
+  steps:
+  - intent: ask_skills_for_career
+  - action: utter_skills_for_career
